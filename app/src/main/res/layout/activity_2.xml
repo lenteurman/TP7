@@ -13,7 +13,16 @@
         android:text="@string/ok"
         tools:layout_editor_absoluteX="154dp"
         tools:layout_editor_absoluteY="226dp"
+        android:layout_marginTop="25dp"
         android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="222dp" />
+        android:layout_marginTop="136dp"
+        android:text="@string/continuer" />
 </RelativeLayout>
