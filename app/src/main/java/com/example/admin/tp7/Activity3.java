@@ -81,6 +81,7 @@ public class Activity3 extends AppCompatActivity {
 
     }
     //Mon tableau de questions
+    //ok
     VraiFaux[] questions = new VraiFaux[] {
             new VraiFaux("Couleur","Jaune","Rouge","1"),
             new VraiFaux("Autre","Bleu","Vert","2"),
