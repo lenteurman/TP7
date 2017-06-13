@@ -10,9 +10,11 @@ import android.widget.TextView;
 
 public class Activity3 extends AppCompatActivity {
 
+    public static final String VAL_1 = "val1";
+    public static final String VAL_2 = "val2";
     private int tableau;
     private int compteur;
-    private String reponse;
+    private int reponse;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,14 +22,15 @@ public class Activity3 extends AppCompatActivity {
 
         //On récupère les valeurs de ma dernière Activité
         Intent intent = getIntent();
-        tableau = intent.getIntExtra("val1",0);
-        compteur = intent.getIntExtra("val2",0);
+        tableau = intent.getIntExtra(VAL_1,0);
+        compteur = intent.getIntExtra(VAL_2,0);
         reponse = questions[tableau].getReponse();
 
         //On actualise Texte et Boutons
         String texte = questions[tableau].getQuestion();
         TextView editText =((TextView) findViewById(R.id.textView3));
         editText.setText(texte);
+
 
         Button boutonB = (Button) findViewById(R.id.button4);
         String texte2 = questions[tableau].getChoix1();
@@ -44,17 +47,17 @@ public class Activity3 extends AppCompatActivity {
                 //tant qu'on n'a pas parcouru toutes les questions
                 if (tableau < questions.length-1) {
                     tableau++;
-                    if (reponse == "1") { //Bonne réponse
+                    if (reponse == 1) { //Bonne réponse
                         compteur++;
                     }
                     Intent intent = new Intent(Activity3.this,Activity3.class);
-                    intent.putExtra("val1",tableau);
-                    intent.putExtra("val2",compteur);
+                    intent.putExtra(VAL_1,tableau);
+                    intent.putExtra(VAL_2,compteur);
                     startActivity(intent);
                 }
                 //Si on a répondu à toutes les questions
                 else  {
-                    if (reponse == "1") {
+                    if (reponse == 1) {
                         compteur++;
                     }
                     Intent intent = new Intent(Activity3.this,Activity4.class);
@@ -71,16 +74,16 @@ public class Activity3 extends AppCompatActivity {
             public void onClick(View view) {
                 if (tableau < questions.length-1) {
                     tableau++;
-                    if (reponse =="2") {
+                    if (reponse == 2) {
                         compteur++;
                     }
                     Intent intent = new Intent(Activity3.this,Activity3.class);
-                    intent.putExtra("val1",tableau);
-                    intent.putExtra("val2",compteur);
+                    intent.putExtra(VAL_1,tableau);
+                    intent.putExtra(VAL_2,compteur);
                     startActivity(intent);
                 }
                 else  {
-                    if (reponse =="2") {
+                    if (reponse == 2) {
                         compteur++;
                     }
                     Intent intent = new Intent(Activity3.this,Activity4.class);
@@ -94,9 +97,9 @@ public class Activity3 extends AppCompatActivity {
     }
     //Mon tableau de questions
     VraiFaux[] questions = new VraiFaux[] {
-            new VraiFaux("Couleur","Jaune","Rouge","1"),
-            new VraiFaux("Autre","Bleu","Vert","2"),
-            new VraiFaux("Autre2","Noir","Blanc","2")
+            new VraiFaux("Couleur","Jaune","Rouge",1),
+            new VraiFaux("Autre","Bleu","Vert",2),
+            new VraiFaux("Autre2","Noir","Blanc",2)
     };
 
 }

@@ -8,9 +8,9 @@ public class VraiFaux {
     private String question;
     private String choix1;
     private String choix2;
-    private String reponse;
+    private int reponse;
 
-    public VraiFaux(String question, String choix1, String choix2, String reponse) {
+    public VraiFaux(String question, String choix1, String choix2, int reponse) {
         setQuestion(question);
         setChoix1(choix1);
         setChoix2(choix2);
@@ -26,7 +26,7 @@ public class VraiFaux {
     public void setChoix2(String choix2) {
         this.choix2 = choix2;
     }
-    public void setReponse(String reponse) {
+    public void setReponse(int reponse) {
         this.reponse = reponse;
     }
     public String getChoix1() {
@@ -38,8 +38,6 @@ public class VraiFaux {
     public String getQuestion() {
         return question;
     }
-    public String getReponse() {
-        return reponse;
-    }
+    public int getReponse() { return reponse; }
 
 }
