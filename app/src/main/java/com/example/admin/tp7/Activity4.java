@@ -12,6 +12,7 @@ public class Activity4 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_4);
 
+        //On récupère notre Score et on l'affiche
         Intent intent = getIntent();
         String texte = intent.getIntExtra("param",0)+"/"+intent.getIntExtra("param2",1);
         TextView editText =((TextView) findViewById(R.id.textView4));
