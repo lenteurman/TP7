@@ -1,9 +1,10 @@
 <resources>
     <string name="app_name">TP7</string>
-    <string name="ok">wdrdyuwèlxèsk</string>
-    <string name="tchitchi">Tchitchi</string>
-    <string name="la_mort">La Mort</string>
-    <string name="la_mort_ou_tchitchi">La Mort ou Tchitchi ?</string>
+    <string name="ok">De toute façon, on commence le QCM.</string>
+    <string name="tchitchi">Non !</string>
+    <string name="la_mort">Oui !</string>
+    <string name="la_mort_ou_tchitchi">Etes-vous prêt ?</string>
     <string name="continuer">Continuer</string>
     <string name="ok2">wrejyllyyumu</string>
+    <string name="score">score final</string>
 </resources>

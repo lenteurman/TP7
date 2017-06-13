@@ -1,9 +1,8 @@
 package com.example.admin.tp7;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -96,10 +95,11 @@ public class Activity3 extends AppCompatActivity {
 
     }
     //Mon tableau de questions
+    //Le 4 eme paramètre indique quel est le bon choix le n°1 ou 2
     VraiFaux[] questions = new VraiFaux[] {
-            new VraiFaux("Couleur","Jaune","Rouge",1),
-            new VraiFaux("Autre","Bleu","Vert",2),
-            new VraiFaux("Autre2","Noir","Blanc",2)
+            new VraiFaux("Android ou iPhone ?","Android","iPhone",1),
+            new VraiFaux("Football ou Rugby ?","Football","Rugby",2),
+            new VraiFaux("Nain ou Elfe ?","Nain","Elfe",2)
     };
 
 }
