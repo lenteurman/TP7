@@ -18,9 +18,9 @@ public class MainActivity extends AppCompatActivity {
         boutonD.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.d("BOUTON","Celui de droite");
+                //Log.d("BOUTON","Celui de droite");
                 Intent intent = new Intent(MainActivity.this,Activity2.class);
-                intent.putExtra("param", "Je viens du bouton de Droite");
+                //intent.putExtra("param", "Je viens du bouton de Droite");
                 startActivity(intent);
             }
         });
@@ -29,9 +29,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void boutonG(View view) {
-        Log.d("BOUTON","Celui de gauche");
+        //Log.d("BOUTON","Celui de gauche");
         Intent intent = new Intent(MainActivity.this,Activity2.class);
-        intent.putExtra("param", "Je viens du bouton de Gauche");
+        //intent.putExtra("param", "Je viens du bouton de Gauche");
         startActivity(intent);
     }
 }

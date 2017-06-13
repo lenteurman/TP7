@@ -16,17 +16,17 @@ public class Activity2 extends AppCompatActivity {
         setContentView(R.layout.activity_2);
 
         Intent intent = getIntent();
-        String texte = intent.getStringExtra("param");
+        //String texte = intent.getStringExtra("param");
         TextView editText =((TextView) findViewById(R.id.textView2));
-        editText.setText(texte);
+        editText.setText(R.string.ok);
 
         Button boutonC = (Button) findViewById(R.id.button3);
         boutonC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.d("BOUTON","Celui de la page 2");
+                //Log.d("BOUTON","Celui de la page 2");
                 Intent intent = new Intent(Activity2.this,Activity3.class);
-                intent.putExtra("param2", "Je suis du bouton de la page 2");
+                //intent.putExtra("param2", "Je suis du bouton de la page 2");
                 startActivity(intent);
             }
         });

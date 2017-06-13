@@ -99,7 +99,9 @@ public class Activity3 extends AppCompatActivity {
     VraiFaux[] questions = new VraiFaux[] {
             new VraiFaux("Android ou iPhone ?","Android","iPhone",1),
             new VraiFaux("Football ou Rugby ?","Football","Rugby",2),
-            new VraiFaux("Nain ou Elfe ?","Nain","Elfe",2)
+            new VraiFaux("Nain ou Elfe ?","Nain","Elfe",2),
+            new VraiFaux("PC ou Console ?","PC","Console",1),
+            new VraiFaux("McDo ou BurgerKing ?","McDo","Burger King",1)
     };
 
 }
